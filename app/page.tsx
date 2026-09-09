@@ -37,7 +37,7 @@ export default function Home() {
 
               {/* Verified Supporting Copy */}
               <p className="text-sm sm:text-base text-[#5A6E7C] leading-relaxed">
-                Personalized respiratory care from <strong className="text-[#163447] font-semibold">Dr. Y. Murali</strong> at Srikara Hospital, Madeenaguda &mdash; focused on understanding the cause of breathing problems and guiding patients toward appropriate care.
+                Personalized respiratory care from <strong className="text-[#163447] font-semibold">Dr. Y. Murali</strong> at Srikara Hospital, Madeenaguda - focused on understanding the cause of breathing problems and guiding patients toward appropriate care.
               </p>
 
               {/* Location Badge */}
@@ -46,7 +46,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span>Srikara Hospital &bull; Mythri Nagar, Madeenaguda, Hyderabad</span>
+                <span>Srikara Hospital &bull; Mythri Nagar, Madeenaguda -</span>
               </div>
 
               {/* Primary Action */}
@@ -89,7 +89,7 @@ export default function Home() {
                 </h1>
 
                 <p className="animate-fade-in-up animation-delay-200 text-lg text-[#5A6E7C] font-normal leading-relaxed max-w-xl">
-                  Personalized respiratory care from <strong className="text-[#163447] font-semibold">Dr. Y. Murali</strong> at Srikara Hospital, Madeenaguda &mdash; focused on understanding the cause of breathing problems and guiding patients toward appropriate care.
+                  Personalized respiratory care from <strong className="text-[#163447] font-semibold">Dr. Y. Murali</strong> at Srikara Hospital, Madeenaguda - focused on understanding the cause of breathing problems and guiding patients toward appropriate care.
                 </p>
 
                 <div className="flex items-center gap-2 text-xs font-semibold text-[#163447]">
@@ -97,7 +97,7 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <span>Srikara Hospital &bull; Mythri Nagar, Madeenaguda, Hyderabad</span>
+                  <span>Srikara Hospital &bull; Mythri Nagar, Madeenaguda -</span>
                 </div>
 
                 <div className="animate-fade-in-up animation-delay-300 flex items-center gap-4 pt-2">

@@ -168,6 +168,74 @@ body {
   animation: floatGentle 4s ease-in-out infinite;
 }
 
+/* Premium Hero Visual Enhancements */
+@keyframes rotateSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes haloPulse {
+  0%, 100% {
+    opacity: 0.45;
+    transform: scale(0.94);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(0.5);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.85;
+  }
+  75% {
+    opacity: 0.35;
+  }
+  100% {
+    transform: translateY(-130px) scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes premiumReveal {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(12px);
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+.animate-rotate-slow {
+  animation: rotateSlow 22s linear infinite;
+}
+
+.animate-halo-pulse {
+  animation: haloPulse 6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animate-float-up {
+  animation: floatUp 5s ease-in-out infinite;
+}
+
+.animate-premium-reveal {
+  animation: premiumReveal 1.1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
 .animate-pulse-glow {
   animation: pulseGlow 3s ease-in-out infinite;
 }

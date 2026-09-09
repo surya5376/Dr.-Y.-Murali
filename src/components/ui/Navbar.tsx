@@ -80,14 +80,16 @@ export const Navbar: React.FC = () => {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="1.75"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 aria-hidden="true"
               >
-                <path d="M12 3v8m0 0l-2.5 3m2.5-3l2.5 3" />
-                <path d="M6.5 14c0 3 2 5 4.5 5s1-.8 1-2m0-10c-2.2 0-4 1.2-5 3.5-.8 2-.5 4.5 0 6.5" />
-                <path d="M17.5 14c0 3-2 5-4.5 5s-1-.8-1-2m0-10c2.2 0 4 1.2 5 3.5.8 2 .5 4.5 0 6.5" />
+                <path d="M12 3v6" />
+                <path d="M12 9c-1.8 0-3.2 1.7-3.6 4" />
+                <path d="M12 9c1.8 0 3.2 1.7 3.6 4" />
+                <circle cx="7.5" cy="15" r="3.5" fill="currentColor" fillOpacity="0.16" />
+                <circle cx="16.5" cy="15" r="3.5" fill="currentColor" fillOpacity="0.16" />
               </svg>
             </div>
 

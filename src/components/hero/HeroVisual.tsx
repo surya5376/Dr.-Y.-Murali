@@ -8,14 +8,53 @@ interface HeroVisualProps {
   priority?: boolean;
 }
 
+const PARTICLES = [
+  { left: "22%", delay: "0s", duration: "5.5s", color: "#4DD0E1", size: 5 },
+  { left: "68%", delay: "1.1s", duration: "6s", color: "#2D9C9C", size: 4 },
+  { left: "40%", delay: "2.4s", duration: "5s", color: "#FF6B35", size: 3.5 },
+  { left: "80%", delay: "3.2s", duration: "6.5s", color: "#4DD0E1", size: 4.5 },
+  { left: "15%", delay: "4s", duration: "5.8s", color: "#2D9C9C", size: 3.5 },
+];
+
 export const HeroVisual: React.FC<HeroVisualProps> = ({ className = "", priority = true }) => {
   return (
     <div
-      className={`group relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-[540px] mx-auto flex items-center justify-center select-none cursor-default ${className}`}
+      className={`group relative w-full max-w-[420px] sm:max-w-[480px] lg:max-w-[540px] mx-auto flex items-center justify-center select-none cursor-default animate-premium-reveal ${className}`}
     >
       {/* 1. Luminous Atmospheric Radial Background (Seamless light gradient, zero dark boxes) */}
       <div className="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_center,rgba(45,156,156,0.12)_0%,rgba(240,246,252,0.6)_45%,transparent_75%)] pointer-events-none transition-opacity duration-700 group-hover:opacity-100" />
       <div className="absolute inset-6 rounded-full bg-[radial-gradient(circle_at_center,rgba(255,107,53,0.05)_0%,transparent_60%)] pointer-events-none" />
+
+      {/* 1b. Premium Halo Ring (slow rotating conic sheen + pulsing glow, clipped to a circle so it never spills) */}
+      <div className="absolute inset-0 rounded-full overflow-hidden pointer-events-none">
+        <div
+          className="absolute -inset-8 rounded-full opacity-40 blur-2xl animate-rotate-slow"
+          style={{
+            background:
+              "conic-gradient(from 0deg, rgba(45,156,156,0.28), rgba(255,107,53,0.16), rgba(77,208,225,0.28), rgba(45,156,156,0.28))",
+          }}
+        />
+        <div className="absolute inset-6 rounded-full bg-[radial-gradient(circle_at_center,rgba(45,156,156,0.2)_0%,transparent_70%)] animate-halo-pulse" />
+      </div>
+
+      {/* 1c. Drifting Oxygen Exchange Particles */}
+      <div className="absolute inset-0 pointer-events-none">
+        {PARTICLES.map((p, i) => (
+          <span
+            key={i}
+            className="absolute bottom-[18%] rounded-full animate-float-up"
+            style={{
+              left: p.left,
+              width: p.size,
+              height: p.size,
+              backgroundColor: p.color,
+              boxShadow: `0 0 6px 1px ${p.color}`,
+              animationDelay: p.delay,
+              animationDuration: p.duration,
+            }}
+          />
+        ))}
+      </div>
 
       {/* 2. 3D Anatomical Lung Visualization with Synchronized Tidal Respiration */}
       <div className="relative w-[90%] sm:w-[88%] aspect-square flex items-center justify-center">
