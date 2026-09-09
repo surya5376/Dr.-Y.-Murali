@@ -397,7 +397,7 @@ export const Navbar: React.FC = () => {
         <div className="hidden lg:flex items-center gap-5 shrink-0">
           {/* Understated Phone (Does not compete with CTA) */}
           <a
-            href="tel:[Phone]"
+            href="tel:1234567890"
             className="inline-flex items-center gap-1.5 text-[13.5px] font-medium text-slate-600 hover:text-[#163447] transition-colors py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2D9C9C] rounded"
           >
             <svg
@@ -414,7 +414,7 @@ export const Navbar: React.FC = () => {
                 d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
               />
             </svg>
-            <span className="tracking-tight">[Phone]</span>
+            <span className="tracking-tight">1234567890</span>
           </a>
 
           {/* Primary CTA (Refined, #FF6B35, Elegant Arrow) */}
@@ -463,25 +463,6 @@ export const Navbar: React.FC = () => {
          ========================================================================= */}
       {mobileMenuOpen && (
         <div className="lg:hidden border-t border-[#E6EDF2] bg-white px-5 pt-5 pb-8 space-y-6 shadow-2xl animate-fade-in">
-          {/* Brand Header Inside Drawer */}
-          <div className="pb-4 border-b border-slate-100 flex items-center gap-3">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#E0F2F1] text-[#2D9C9C]">
-              <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 3v8m0 0l-2.5 3m2.5-3l2.5 3" />
-                <path d="M6.5 14c0 3 2 5 4.5 5s1-.8 1-2m0-10c-2.2 0-4 1.2-5 3.5-.8 2-.5 4.5 0 6.5" />
-                <path d="M17.5 14c0 3-2 5-4.5 5s-1-.8-1-2m0-10c2.2 0 4 1.2 5 3.5.8 2 .5 4.5 0 6.5" />
-              </svg>
-            </div>
-            <div>
-              <span className="block font-heading text-base font-bold text-[#163447]">
-                Dr. Y. Murali
-              </span>
-              <span className="block text-xs font-semibold text-[#2D9C9C]">
-                Pulmonologist &bull; Srikara Hospital
-              </span>
-            </div>
-          </div>
-
           {/* Navigation Links */}
           <div className="space-y-1 text-left">
             {/* Conditions Accordion */}
@@ -676,13 +657,13 @@ export const Navbar: React.FC = () => {
             </Link>
 
             <a
-              href="tel:[Phone]"
+              href="tel:1234567890"
               className="flex items-center justify-center gap-2 w-full py-3 rounded-lg text-sm font-semibold text-[#163447] bg-[#F5F7FA] hover:bg-slate-200 transition-colors"
             >
               <svg className="h-4 w-4 text-[#2D9C9C]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              <span>Call Clinic: [Phone]</span>
+              <span>Call Clinic: 1234567890</span>
             </a>
           </div>
         </div>
